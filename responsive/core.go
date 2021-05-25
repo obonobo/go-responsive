@@ -21,7 +21,7 @@ func Ok(body map[string]interface{}, headers map[string]string) Response {
 }
 
 func Redirect(to string) Response {
-	return CreateResponse(REDIRECT_SEE_OTHER, nil, map[string]string{
+	return CreateResponse(SEE_OTHER, nil, map[string]string{
 		"Location": to,
 	})
 }
